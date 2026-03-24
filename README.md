@@ -48,11 +48,11 @@ This project demonstrates a complete analytics pipeline — from raw CSV ingesti
 
 ##  File Structure
 
-* steps.sql  # Cleaning and SQL
+* SQL SCRIPTS  # Cleaning and Analysis
 * Car_Rental.xlsx    # Source Excel data
 * customer.csv
 * Vehicles.csv
 * Rentals.csv
 * payments.csv
 * makes.csv
-* 2.pbix             # Power BI dashboard file
+* DASHBOARD.pbix             # Power BI dashboard file
