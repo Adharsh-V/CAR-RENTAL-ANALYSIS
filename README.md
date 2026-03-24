@@ -17,7 +17,7 @@ This project demonstrates a complete analytics pipeline — from raw CSV ingesti
   
 *`makes.csv` - Brand-level metadata including image URLs 
 
-* `payments.csv` - Payment records by method (Credit Card, PayPal, Bank Transfer, Cash)
+*`payments.csv` - Payment records by method (Credit Card, PayPal, Bank Transfer, Cash)
 
 ##  Tech Stack
 - **MySQL** — Data ingestion, cleaning, deduplication, joins
