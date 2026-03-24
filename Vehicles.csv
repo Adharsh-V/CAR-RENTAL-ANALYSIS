@@ -1,0 +1,51 @@
+Vehicle_ID,Make,Model,Year,Daily_Rate,Status,Status Date,img
+301,Ford,Explorer,2020,150,Available,2024-04-12 00:00:00,https://www.iihs.org/cdn-cgi/image/width=636/api/ratings/model-year-images/2973/
+302,Ford,Edge,2022,132,Available,2024-09-27 00:00:00,https://www.motortrend.com/uploads/2021/10/2022-Ford-Edge-03.jpg
+303,BMW,X6,2021,97,Available,2024-04-16 00:00:00,https://images.hgmsites.net/lrg/2021-bmw-x6-sports-activity-coupe-angular-front-exterior-view_100860717_l.jpg
+304,Chevrolet,Camaro,2020,63,Available,2024-03-12 00:00:00,https://65e81151f52e248c552b-fe74cd567ea2f1228f846834bd67571e.ssl.cf1.rackcdn.com/GM%20US/2020%20Chevrolet%20Camaro/CamaroGarnet-Red-Tintcoat.jpg
+305,Mercedes,GLA,2021,63,Under Maintenance,2024-07-07 00:00:00,https://cdn.motor1.com/images/mgl/z2xpE/s1/mercedes-benz-gla-35-amg-2020.webp
+306,Tesla,Model X,2021,159,Available,2024-01-21 00:00:00,https://hips.hearstapps.com/amv-prod-cad-assets.s3.amazonaws.com/vdat/submodels/tesla_model-x_tesla-model-x_2021-1644513502260.jpg?fill=18:11&resize=640:*
+307,Mercedes,Maybach,2019,169,Under Maintenance,2024-04-12 00:00:00,https://www.gts-models.com/wp-content/uploads/2019/05/gt237-mercedes-maybach-s650-2019-01.jpg
+308,Tesla,Model Y,2019,71,Rented,2024-05-01 00:00:00,https://s1.cdn.autoevolution.com/images/news/2019-tesla-model-y-suv-confirmed-to-share-platform-with-model-3-sedan-119577_1.jpg
+309,Tesla,Cybertruck,2023,172,Available,2024-08-02 00:00:00,https://www.teslarati.com/wp-content/uploads/2022/11/tesla-cybertruck-prototype.jpeg
+310,Hyundai,Accent,2018,179,Available,2024-11-26 00:00:00,https://cars.usnews.com/static/images/Auto/izmo/i62379704/2018_hyundai_accent_angularfront.jpg
+311,Ford,Eco Sport,2019,111,Under Maintenance,2024-03-28 00:00:00,"https://quatrorodas.abril.com.br/wp-content/uploads/2018/02/ecosport-1-5-se-direct-1160x702.jpg?crop=1&resize=1212,909"
+312,Tesla,Model S,2018,180,Rented,2024-04-09 00:00:00,https://cdn.dealeraccelerate.com/ecpch/2/789/38888/790x1024/w/2018-tesla-p100d-model-s
+313,BMW,X7,2021,74,Available,2024-05-31 00:00:00,https://mkt-vehicleimages-prd.autotradercdn.ca/photos/chrome/Expanded/White/2021BMS290001/2021BMS29000101.jpg
+314,Nissan,Altima,2022,83,Rented,2024-05-10 00:00:00,https://www.nissanusa.com/interactivebrochures/cars/altima/altima-trims/assets/Nissan/articles/N_22Altima/desktop/06_trims/d07-altima-trim-levels-img-platinum-01.jpg?762b16e1c321bf863098f30fa74daa31
+315,Honda,Civic,2021,192,Available,2024-05-29 00:00:00,https://www.iihs.org/cdn-cgi/image/width=636/api/ratings/model-year-images/3003/
+316,BMW,X3,2018,79,Available,2024-11-04 00:00:00,https://cars.usnews.com/static/images/Auto/izmo/i65432320/2018_bmw_x3_angularfront.jpg
+317,Audi,A3,2020,117,Rented,2024-09-14 00:00:00,https://cdn.euroncap.com/media/60162/audi-a3.png
+318,Hyundai,Elantra,2023,131,Under Maintenance,2024-10-20 00:00:00,https://di-uploads-pod27.dealerinspire.com/saffordhyundaiofspringfield/uploads/2023/03/2023-elantra-sel-1024x768.jpg
+319,Honda,Accord,2018,116,Available,2024-07-10 00:00:00,https://images.hgmsites.net/hug/2018-honda-accord-sdn_100614087_h.jpg
+320,Chevrolet,Cruze,2020,100,Available,2024-10-03 00:00:00,https://di-uploads-pod9.dealerinspire.com/blossomchevy/uploads/2020/04/2017-Chevy-Cruze-RS-Model-Left-728x400.jpg
+321,Toyota,Rav4,2021,91,Available,2024-06-09 00:00:00,https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQsDhuKFaLMG32_4RfZkYt2UJbaD4exjvNnOQ&s
+322,Nissan,Rogue,2018,175,Rented,2024-11-09 00:00:00,https://inv.assets.ansira.net/ChromeColorMatch/us/WHITE_cc_2018NIS110030_01_1280_KAD.jpg
+323,BMW,X1,2020,60,Available,2024-01-22 00:00:00,"https://www.autoindustriya.com/cdn-cgi/image/width=720,quality=60,format=auto/images/new-cars/BMW/2020_X1-1.jpg"
+324,Ford,Expedition,2019,106,Available,2024-09-09 00:00:00,"https://crdms.images.consumerreports.org/c_lfill,w_260,q_auto,f_auto/prod/cars/chrome/white/2020FOS320004_1280_05"
+325,Nissan,Sentra,2023,137,Available,2024-08-23 00:00:00,https://di-uploads-pod27.dealerinspire.com/newtonnissansouth/uploads/2023/05/2023-Nissan-Sentra-SR-Midnight-Edition-Model-Left.jpg
+326,Mercedes,Benz e63,2023,199,Available,2024-02-18 00:00:00,https://www.mercedes-benz.ca/content/dam/mb-nafta/ca/myco/my23/e/sedan/byo-options/MBCAN-2023-AMG-E-SEDAN-MP-039.jpg
+327,Honda,CRV,2019,128,Available,2024-02-28 00:00:00,https://platform.cstatic-images.com/xlarge/in/v2/stock_photos/ef2dbea3-46ca-4deb-ac28-5a28cf0c3185/07a297f4-aabc-4ab1-a11b-db95f8729498.png
+328,Mercedes,Model_28,2022,131,Under Maintenance,2024-06-18 00:00:00,https://images.hgmsites.net/lrg/2022-mercedes-benz-s-class-s-580-4matic-sedan-angular-front-exterior-view_100847783_l.jpg
+329,Audi,A5,2019,103,Available,2024-07-06 00:00:00,https://images.hgmsites.net/med/2019-audi-s5-sportback-3-0-tfsi-prestige-angular-front-exterior-view_100684469_m.jpg
+330,Honda,HRV,2021,100,Available,2024-09-27 00:00:00,https://di-honda-enrollment.s3.amazonaws.com/2021/model-pages/hr_v/trims/honda_hr_v_sport.jpg
+331,BMW,X5,2021,81,Available,2024-07-08 00:00:00,https://images.hgmsites.net/med/2025-bmw-x5-sdrive40i-sports-activity-vehicle-side-exterior-view_100927281_m.webp
+332,Nissan,Sunny,2023,194,Rented,2024-06-23 00:00:00,https://ymimg1.b8cdn.com/resized/car_model/8394/pictures/9006939/mobile_listing_main_2020_sunny_logo.jpg
+333,Chevrolet,Aveo,2018,117,Rented,2024-02-20 00:00:00,https://comunicaciongm.com.mx/aveo2018/aveoSail/2018/desktop/img/colorizer/colors_azul.png
+334,Audi,Q8,2023,152,Rented,2024-02-24 00:00:00,https://images.dealer.com/ddc/vehicles/2023/Audi/Q8/SUV/trim_55_Premium_88b753/color/Mythos%20Black%20Metallic-0E0E-32%2C31%2C29-640-en_US.jpg?impolicy=resize&w=414
+335,Audi,Q7,2020,138,Available,2024-08-31 00:00:00,https://imgd.aeplcdn.com/664x374/cw/ec/26521/Audi-Q7-Right-Front-Three-Quarter-165498.jpg?wm=0&q=80
+336,BMW,M7,2021,125,Available,2024-11-15 00:00:00,https://file.kelleybluebookimages.com/kbb/base/house/2021/2021-BMW-7%20Series-FrontSide_BM7S2101_640x480.jpg
+337,Audi,R8,2021,107,Available,2024-05-10 00:00:00,https://media.audi.com/is/image/audi/nemo/uk/models/r8-coupe/trims/2022-trims/2022-mobile/r8_coupe_performance_quattro_edition_34_1280x1080px.png?width=768
+338,BMW,M5,2019,101,Available,2024-11-02 00:00:00,https://imgd.aeplcdn.com/664x374/cw/ec/33136/BMW-M5-Exterior-172905.jpg?wm=0&q=80
+339,Hyundai,Santa Fe,2023,53,Available,2024-05-14 00:00:00,https://www.iihs.org/cdn-cgi/image/width=636/api/ratings/model-year-images/3069/
+340,Ford,Mustang,2020,181,Available,2024-01-21 00:00:00,https://mkt-vehicleimages-prd.autotradercdn.ca/photos/chrome/Expanded/White/2017FOC050001/2017FOC05000101.jpg
+341,Ford,Focus,2020,190,Available,2024-11-24 00:00:00,https://www.anycaronline.co.uk/images/vehicles/600/ford-focus-hatchback-2-0-ecoblue-st-line-5dr-auto-81008.jpg
+342,Honda,Pilot,2022,84,Available,2024-06-15 00:00:00,https://di-sitebuilder-assets.s3.amazonaws.com/Honda/ModelLandingPage/Pilot/2022/trim-Elite.jpg
+343,BMW,M3,2020,75,Available,2024-09-30 00:00:00,https://www.bmwjamaica.com/content/dam/bmw/common/all-models/m-series/m3-sedan/2020/overview/bmw-3-series-sedan-m-automobiles-sd-individual-03.jpg
+344,Hyundai,Tucson,2020,149,Rented,2024-03-29 00:00:00,https://carsales.pxcrush.net/general/car/spec/S0003XYT.jpg?width=618&height=412&watermark=2091322422
+345,Audi,RS7,2019,174,Available,2024-11-11 00:00:00,https://cdn.wheel-size.com/automobile/body/audi-rs7-2019-2023-1708148192.76531.jpg
+346,Toyota,Corolla,2018,52,Rented,2024-01-14 00:00:00,https://images.hgmsites.net/lrg/2018-toyota-corolla-le-eco-cvt-natl-angular-front-exterior-view_100622890_l.jpg
+347,Toyota,Hiace,2019,143,Rented,2024-08-29 00:00:00,https://cdn.motor1.com/images/mgl/41rXJ/s3/2019-toyota-hiace.jpg
+348,Tesla,Model 3,2019,177,Available,2024-09-21 00:00:00,https://images.hgmsites.net/lrg/2024-tesla-model-3-rwd-angular-front-exterior-view_100927971_l.webp
+349,Nissan,Patrol,2023,100,Available,2024-02-22 00:00:00,https://i0.wp.com/casauto.com/wp-content/uploads/2023/07/PATROL-XE.png?fit=1239%2C559&ssl=1
+350,Ford,Fiesta,2020,51,Available,2024-04-01 00:00:00,https://cdn.wheel-size.com/automobile/body/ford-fiesta-2017-2022-1718965162.6886613.jpg
