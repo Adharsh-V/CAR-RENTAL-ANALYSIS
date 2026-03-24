@@ -48,7 +48,7 @@ This project demonstrates a complete analytics pipeline — from raw CSV ingesti
 
 ##  File Structure
 
-├── steps.sql          # All SQL queries (cleaning + analysis)
+├── steps.sql          #All SQL queries (cleaning + analysis)
 ├── Car_Rental.xlsx    # Source Excel data
 ├── customer.csv
 ├── Vehicles.csv
