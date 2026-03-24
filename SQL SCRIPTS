@@ -1,0 +1,188 @@
+create database end_to_end2;
+
+
+
+select * from customer;
+select * from makes;
+select * from payments;
+select * from rentals;
+select * from vehicles;
+
+create table vehicles2 like vehicles;
+insert vehicles2 select * from vehicles;
+
+select * from customer2;
+
+select * from customer2;
+select * from makes2;
+select * from payments2;
+select * from rentals2;
+select * from vehicles2;
+
+alter table rentals2 modify Start_Date Date;
+
+alter table rentals2 modify End_Date Date;
+
+alter table payments2
+modify Payment_Date date;
+
+
+
+create table rentals3 as 
+select *,row_number()
+over(partition by Rental_ID,
+Customer_ID,
+Vehicle_ID,
+Start_Date,
+Total_Cost,
+`Status`,
+End_Date) as row_number_
+from rentals2;
+
+delete from rentals3 where row_number_>1;
+ 
+create table rentals2 like rentals3;
+insert into rentals2 select * from rentals3;
+select * from makes2;
+
+
+drop table rentals3;
+
+alter table vehicles2 change `Status Date` Status_Date date;
+create table final_rental as
+select r.*,c.name,c.phone,c.Membership_Status,p.Payment_ID,p.Payment_Date,p.Amount,p.Payment_Method,v.Make,v.Model,v.Year,v.Daily_Rate,v.Status_of_rental,v.Status_Date,v.img,m.`img URL`
+from rentals2 as r
+left join customer2 as c
+on r.Customer_ID=c.Customer_ID
+left join payments2 as p
+on r.Rental_ID=p.Rental_ID
+left join vehicles2 as v
+on v.Vehicle_ID=r.Vehicle_ID
+left join makes2 as m
+on m.Make=v.Make;
+
+alter table vehicles2 change Status Status_of_rental text;
+
+
+
+select * from vehicles2;
+drop table final_rental;
+select * from  final_rental;
+alter table final_rental drop column row_number_;
+
+
+update final_rental set End_Date=REGEXP_REPLACE(End_Date,'[^0-9-:]','');
+update final_rental set End_Date=trim(trailing '00:00:00' from End_Date);
+
+
+select * from final_rental;
+update  final_rental set End_Date=NULL where End_Date='';
+
+
+alter table final_rental modify End_Date date;
+
+
+alter table final_rental drop column Total_Cost;
+
+
+select * from final_rental;
+
+
+
+-- 1) TOP AMOUNT GENERATING CUSTOMER 
+
+select sum(Amount),Customer_ID from final_rental
+group by Customer_ID
+order by sum(Amount) desc
+limit 1;
+
+-- 2) DETAILS OF TOP CUSTOMER
+
+SELECT *
+FROM final_rental
+WHERE Customer_ID = (
+    SELECT Customer_ID
+    FROM final_rental
+    GROUP BY Customer_ID
+    ORDER BY SUM(Amount) DESC
+    LIMIT 1
+);
+
+select * from makes2;
+
+select * from final_rental;
+
+select Membership_Status,sum(Amount) from final_rental
+group by Membership_Status
+order by sum(Amount);
+
+
+
+-- 3) % Contribution from each Membership Status
+SELECT 
+    Membership_Status,
+    (select sum(Amount) from final_rental) overall_amount,
+    SUM(Amount) AS total_amount,
+    round(SUM(Amount) * 100 / (SELECT SUM(Amount) FROM final_rental),2) AS percentage
+FROM final_rental
+GROUP BY Membership_Status;
+
+
+select * from final_rental;
+
+
+-- 4) Month wise Revenue Generation
+
+select date_format(Payment_Date,'%Y-%m') as month,
+sum(Amount) as monthly_Revenue
+from final_rental
+group by month
+order by month;
+
+
+-- 5) Sales growth month wise
+
+select month,monthlyRevenue,lag(monthlyRevenue)over(order by month) as previous_month,
+(monthlyRevenue-lag(monthlyRevenue)over(order by month))
+/
+lag(monthlyRevenue)over(order by month)*100
+as growth_percentage from(
+select date_format(Payment_Date,'%Y-%m') as month,sum(Amount) as monthlyRevenue from 
+final_rental group by month
+)t;
+
+select * from final_rental;
+
+-- 6) Difference in Amount between Payment methods
+
+select sum(Amount) as total_Amount,Payment_Method,(select sum(Amount) from final_rental) as overall_total,
+sum(Amount)*100/(select sum(Amount) from final_rental) as percentage_difference from final_rental
+group by Payment_Method 
+order by sum(Amount) desc;
+
+-- 7) Customers with Amount greatrer than Average Amount
+
+select Customer_ID,sum(Amount) as 'total amount',(select round(avg(Amount),2) from final_rental) 'average amount'
+ from  final_rental
+group by Customer_ID 
+having sum(Amount)>avg(Amount);
+
+-- 8) Revenue over month
+
+select date_format(Payment_Date,'%Y-%m') month,
+sum(Amount) as 'Monthly Revenue' from final_rental
+ group by month
+order by month
+;
+
+-- 9) Monthly Revenue Difference/Trend
+
+select date_format(Payment_Date,'%Y-%m') as month,
+sum(Amount) as 'Monthly Revenue',
+sum(Amount)-LAG(sum(Amount)) over( order by date_format(Payment_Date,'%Y-%m') desc) as 'sales difference'
+from final_rental
+group by date_format(Payment_Date,'%Y-%m');
+
+
+
+
