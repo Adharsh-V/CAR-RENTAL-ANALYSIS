@@ -7,15 +7,15 @@ This project demonstrates a complete analytics pipeline — from raw CSV ingesti
 
 **Dataset**: 5 relational tables (Customers, Vehicles, Rentals, Payments, Makes) containing c rental transactions across 50 vehicles.
 
-## 🗂️ Dataset
+##  Dataset
 
- `customer.csv` - Customer profiles with membership tiers (Bronze/Gold/Silver)
- `Vehicles.csv` - Fleet of 50 vehicles with make, model, daily rates 
- `Rentals.csv` - Rental transactions with start/end dates and status 
- `payments.csv` - Payment records by method (Credit Card, PayPal, Bank Transfer, Cash) 
- `makes.csv` - Brand-level metadata including image URLs 
+ *`customer.csv` - Customer profiles with membership tiers (Bronze/Gold/Silver)
+ *`Vehicles.csv` - Fleet of 50 vehicles with make, model, daily rates 
+*`Rentals.csv` - Rental transactions with start/end dates and status 
+* `payments.csv` - Payment records by method (Credit Card, PayPal, Bank Transfer, Cash) 
+ *`makes.csv` - Brand-level metadata including image URLs 
 
-## 🛠️ Tech Stack
+##  Tech Stack
 - **MySQL** — Data ingestion, cleaning, deduplication, joins
 - **Power BI** — Interactive dashboard with slicers and KPI cards
 - **Excel** — Source data formatting
@@ -42,7 +42,7 @@ This project demonstrates a complete analytics pipeline — from raw CSV ingesti
 - Nissan Sunny has the highest daily rate; Ford Fiesta the lowest
 - Credit card is the dominant payment channel
 
-## 📁 File Structure
+##  File Structure
 
 ├── steps.sql          # All SQL queries (cleaning + analysis)
 ├── Car_Rental.xlsx    # Source Excel data
