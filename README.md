@@ -55,4 +55,4 @@ This project demonstrates a complete analytics pipeline — from raw CSV ingesti
 * Rentals.csv
 * payments.csv
 * makes.csv
-*2.pbix             # Power BI dashboard file
+* 2.pbix             # Power BI dashboard file
