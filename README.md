@@ -9,7 +9,7 @@ This project demonstrates a complete analytics pipeline — from raw CSV ingesti
 
 ## 🗂️ Dataset
 
- `customer.csv` - Customer profiles with membership tiers (Bronze/Gold/Silver) 
+ |`customer.csv` - Customer profiles with membership tiers (Bronze/Gold/Silver)|
  `Vehicles.csv` - Fleet of 50 vehicles with make, model, daily rates 
  `Rentals.csv` - Rental transactions with start/end dates and status 
  `payments.csv` - Payment records by method (Credit Card, PayPal, Bank Transfer, Cash) 
